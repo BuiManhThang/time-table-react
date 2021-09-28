@@ -1,0 +1,59 @@
+.container {
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #b7b9ca;
+  border-left: 5px solid transparent;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.editBtn {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #b7b9ca;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: start;
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+
+.editBtn:hover,
+.editBtn:focus {
+  color: #000;
+}
+
+.name {
+  margin: 0;
+  font-size: 16px;
+  height: 42.67px;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.time {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.room {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

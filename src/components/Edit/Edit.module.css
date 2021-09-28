@@ -1,0 +1,38 @@
+.list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  border-radius: 5px;
+  z-index: 100;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.list_active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn {
+  display: block;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  color: #b7b9ca;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  color: #000;
+}

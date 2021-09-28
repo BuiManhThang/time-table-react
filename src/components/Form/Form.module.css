@@ -1,0 +1,95 @@
+.container {
+  position: fixed;
+  z-index: 1010;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.container_active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.errors {
+  color: red;
+}
+
+.wapper {
+  width: 400px;
+  background-color: #fff;
+  padding: 45px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 20px;
+  color: #b7b9ca;
+  font-weight: 700;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+}
+
+.title {
+  color: #465abc;
+  font-size: 30px;
+  margin: 0;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #465abc;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.7;
+}
+
+.timeControl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+}
+
+.timeControl div {
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .wapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
